@@ -1,4 +1,5 @@
 import { ArrowRight, Phone } from 'lucide-react';
+import { ASSET_IMAGES } from '../data/companies.ts';
 
 interface CtaBannerProps {
   onContactClick: () => void;
@@ -10,7 +11,7 @@ export const CtaBanner = ({ onContactClick }: CtaBannerProps) => {
       {/* Background Photography with Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/jg_headquarters_hero_1792091524260.jpg"
+          src={ASSET_IMAGES.hero}
           alt="Jacobson & Greiner headquarters evening view"
           className="w-full h-full object-cover object-center opacity-40 scale-105"
           referrerPolicy="no-referrer"

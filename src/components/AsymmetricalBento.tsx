@@ -1,5 +1,5 @@
 import { CheckCircle2, Trophy, Hammer, ShieldCheck, ArrowUpRight } from 'lucide-react';
-import { Company } from '../data/companies.ts';
+import { Company, ASSET_IMAGES } from '../data/companies.ts';
 
 interface AsymmetricalBentoProps {
   onSelectCategory: (cat: string) => void;
@@ -85,7 +85,7 @@ export const AsymmetricalBento = ({
             {/* Visual Base Image with Inset Metric Strip */}
             <div className="relative h-64 sm:h-72 overflow-hidden border-t border-neutral-100">
               <img
-                src="/src/assets/images/commercial_construction_1792091524571.jpg"
+                src={ASSET_IMAGES.commercial}
                 alt="Jacobson Commercial construction engineers"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
@@ -145,7 +145,7 @@ export const AsymmetricalBento = ({
 
               <div className="relative h-32 rounded-xl overflow-hidden mb-4">
                 <img
-                  src="/src/assets/images/excavation_civil_works_1792091526418.jpg"
+                  src={ASSET_IMAGES.civil}
                   alt="Allen & Bolack civil excavation work"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"

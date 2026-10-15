@@ -1,5 +1,6 @@
 import { ShieldCheck, Users, Trophy, Layers, Award, Clock } from 'lucide-react';
 import { BrandLogo } from './BrandLogo.tsx';
+import { ASSET_IMAGES } from '../data/companies.ts';
 
 interface AboutViewProps {
   onNavigateTab: (tab: 'home' | 'careers' | 'contact') => void;
@@ -75,7 +76,7 @@ export const AboutView = ({ onNavigateTab }: AboutViewProps) => {
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-neutral-200">
               <img
-                src="/src/assets/images/jg_headquarters_hero_1792091524260.jpg"
+                src={ASSET_IMAGES.hero}
                 alt="Jacobson & Greiner headquarters"
                 className="w-full h-80 object-cover"
                 referrerPolicy="no-referrer"

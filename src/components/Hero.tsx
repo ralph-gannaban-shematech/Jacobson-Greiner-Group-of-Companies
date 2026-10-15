@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Search, ChevronLeft, ChevronRight, Trophy, ArrowRight, Building2, MapPin } from 'lucide-react';
-import { Company } from '../data/companies.ts';
+import { Company, ASSET_IMAGES } from '../data/companies.ts';
 
 interface HeroProps {
   companies: Company[];
@@ -38,7 +38,7 @@ export const Hero = ({
       lead: 'A collective of 12 market-leading companies spanning commercial general contracting, custom residential neighborhoods, heavy civil excavation, concrete supply, and community athletics.',
       ctaText: 'Explore Group Companies',
       kicker: 'Est. 1953 · Western Manitoba Flagship',
-      image: '/src/assets/images/jg_headquarters_hero_1792091524260.jpg',
+      image: ASSET_IMAGES.hero,
       theme: 'gold',
       featuredCompanyId: 'jacobson-commercial',
     },
@@ -48,7 +48,7 @@ export const Hero = ({
       lead: 'Rooted in community pride and Western Hockey League championships (1979 · 1996 · 2016). Anchoring local youth development alongside J&G Homes Arena and the Western Canada Hockey Academy.',
       ctaText: 'Discover Sports & Community',
       kicker: 'WHL Champions 1979 · 1996 · 2016',
-      image: '/src/assets/images/arena_hockey_stadium_1792091526764.jpg',
+      image: ASSET_IMAGES.arena,
       theme: 'gold-dark',
       featuredCompanyId: 'brandon-wheat-kings',
     },
@@ -58,7 +58,7 @@ export const Hero = ({
       lead: 'Our integrated ecosystem—from Allen & Bolack’s mass earthmoving and Western Concrete’s computerized batch plants to J&G Homes and RONA Brandon—ensures uncompromising speed and quality control.',
       ctaText: 'View Civil & Residential',
       kicker: 'Integrated Supply Chain',
-      image: '/src/assets/images/custom_luxury_home_1792091524925.jpg',
+      image: ASSET_IMAGES.residential,
       theme: 'navy',
       featuredCompanyId: 'jng-homes',
     },

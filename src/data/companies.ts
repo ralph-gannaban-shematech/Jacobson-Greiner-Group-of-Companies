@@ -1,3 +1,17 @@
+import heroImg from '../assets/images/jg_headquarters_hero_1792091524260.jpg';
+import commercialImg from '../assets/images/commercial_construction_1792091524571.jpg';
+import residentialImg from '../assets/images/custom_luxury_home_1792091524925.jpg';
+import arenaImg from '../assets/images/arena_hockey_stadium_1792091526764.jpg';
+import civilImg from '../assets/images/excavation_civil_works_1792091526418.jpg';
+
+export const ASSET_IMAGES = {
+  hero: heroImg,
+  commercial: commercialImg,
+  residential: residentialImg,
+  arena: arenaImg,
+  civil: civilImg,
+};
+
 export interface Company {
   id: string;
   name: string;
@@ -26,21 +40,21 @@ export const COMPANIES: Company[] = [
     location: 'Brandon, MB',
     founded: '1984',
     highlights: ['Design-Build Delivery', 'Industrial Warehouses', 'Healthcare & Institutional', 'Commercial Tenant Fit-outs'],
-    image: '/src/assets/images/commercial_construction_1792091524571.jpg'
+    image: ASSET_IMAGES.commercial
   },
   {
     id: 'jng-homes',
     name: 'J&G Homes',
     category: 'Residential',
     tagline: 'Manitoba’s Custom Home & Residential Community Leader',
-    description: 'Offering quality craftsmanship across the fullest range of innovative designs and custom development in Southwest Manitoba, from affordable family homes to prestige estates.',
+    description: 'Offering quality craftsmanship across the fullest range of innovative designs and custom development in Southwest Manitoba, from affordable family homes to prestige properties.',
     fullOverview: 'J&G Homes is the premier residential builder in Western Manitoba. We offer clients an all-in-one build journey: in-house drafting and architectural design, master-planned lot selection in Brandon’s finest communities, energy-efficient building science, and luxury finishing selections at our corporate design centre.',
     phone: '204-728-2235',
     website: 'https://jnghomes.ca',
     location: 'Brandon, MB',
     founded: '1979',
     highlights: ['Award-winning Custom Homes', 'Energy Star & Net-Zero Ready', 'Multi-Family Developments', 'Turnkey Warranty Protection'],
-    image: '/src/assets/images/custom_luxury_home_1792091524925.jpg'
+    image: ASSET_IMAGES.residential
   },
   {
     id: 'brandon-wheat-kings',
@@ -54,7 +68,7 @@ export const COMPANIES: Company[] = [
     location: 'Brandon, MB',
     founded: '1936',
     highlights: ['3x WHL Champions', 'Dozens of NHL Alumni', 'Westman Youth Community Programs', '5,000+ Seat Gameday Experience'],
-    image: '/src/assets/images/arena_hockey_stadium_1792091526764.jpg'
+    image: ASSET_IMAGES.arena
   },
   {
     id: 'rona-brandon',
@@ -67,7 +81,7 @@ export const COMPANIES: Company[] = [
     website: 'https://rona.ca/en',
     location: 'Brandon, MB',
     highlights: ['Pro Contractor Supply Desk', 'Full Lumber Yard & Delivery Fleet', 'Window & Door Specialists', 'Power Tools & Fasteners'],
-    image: '/src/assets/images/jg_headquarters_hero_1792091524260.jpg'
+    image: ASSET_IMAGES.hero
   },
   {
     id: 'vbj-developments',
@@ -81,7 +95,7 @@ export const COMPANIES: Company[] = [
     location: 'Brandon, MB',
     founded: '2004',
     highlights: ['Master-Planned Subdivisions', 'Commercial Zoned Acreage', 'Industrial Parks & Utilities', 'Environmental Site Stewardship'],
-    image: '/src/assets/images/excavation_civil_works_1792091526418.jpg'
+    image: ASSET_IMAGES.civil
   },
   {
     id: 'powell-construction',
@@ -95,7 +109,7 @@ export const COMPANIES: Company[] = [
     location: 'Brandon, MB',
     founded: '1968',
     highlights: ['Laser-Screed Superflat Floors', 'Heavy Agricultural Foundations', 'Bridge Decks & Civil Structures', '50+ Year Track Record'],
-    image: '/src/assets/images/commercial_construction_1792091524571.jpg'
+    image: ASSET_IMAGES.commercial
   },
   {
     id: 'signature-homes',
@@ -108,7 +122,7 @@ export const COMPANIES: Company[] = [
     website: 'https://signaturehomes.ca',
     location: 'Brandon, MB',
     highlights: ['Smart Compact Living Layouts', 'Quick Possession Inventory', 'Designer Color Palettes', 'High Equity Performance'],
-    image: '/src/assets/images/custom_luxury_home_1792091524925.jpg'
+    image: ASSET_IMAGES.residential
   },
   {
     id: 'east-side-marios',
@@ -121,7 +135,7 @@ export const COMPANIES: Company[] = [
     website: 'https://eastsidemarios.com',
     location: 'Brandon, MB',
     highlights: ['Family & Team Dining', 'Private Corporate Banquets', 'Local Sports Sponsorships', 'Catering Services'],
-    image: '/src/assets/images/jg_headquarters_hero_1792091524260.jpg'
+    image: ASSET_IMAGES.hero
   },
   {
     id: 'allen-and-bolack',
@@ -135,7 +149,7 @@ export const COMPANIES: Company[] = [
     location: 'Brandon, MB',
     founded: '1993',
     highlights: ['GPS-Guided Mass Earthmoving', 'Municipal Sewer & Water Mains', 'Commercial Site Grading', 'Flood Mitigation & Drainage'],
-    image: '/src/assets/images/excavation_civil_works_1792091526418.jpg'
+    image: ASSET_IMAGES.civil
   },
   {
     id: 'western-concrete',
@@ -149,7 +163,7 @@ export const COMPANIES: Company[] = [
     location: 'Brandon, MB',
     founded: '1953',
     highlights: ['Certified CSA Ready-Mix Batching', 'Winter Concrete Delivery Heated Fleet', 'Aggregates & Masonry Blocks', '70+ Years in Operation'],
-    image: '/src/assets/images/commercial_construction_1792091524571.jpg'
+    image: ASSET_IMAGES.commercial
   },
   {
     id: 'jng-homes-arena',
@@ -163,7 +177,7 @@ export const COMPANIES: Company[] = [
     location: 'Brandon, MB',
     founded: '2021',
     highlights: ['NHL-Regulation Sheet & Secondary Sheet', 'Player Training Facilities', 'Pro Shop & Community Skate', 'Energy-Efficient Refrigeration'],
-    image: '/src/assets/images/arena_hockey_stadium_1792091526764.jpg'
+    image: ASSET_IMAGES.arena
   },
   {
     id: 'wcha',
@@ -176,6 +190,6 @@ export const COMPANIES: Company[] = [
     website: 'https://wchahockey.ca',
     location: 'Brandon, MB',
     highlights: ['Professional Coaching Staff', 'Video Analysis & Conditioning', 'Spring & Summer Elite Camps', 'Goalie Specific Clinics'],
-    image: '/src/assets/images/arena_hockey_stadium_1792091526764.jpg'
+    image: ASSET_IMAGES.arena
   }
 ];
