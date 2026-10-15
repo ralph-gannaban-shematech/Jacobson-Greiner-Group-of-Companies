@@ -1,0 +1,6 @@
+{
+  "name": "Jacobson & Greiner Group of Companies",
+  "description": "Redesigned digital flagship for Jacobson & Greiner Group of Companies: premier construction, commercial contracting, land development, residential building, and community sports in Western Manitoba.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
